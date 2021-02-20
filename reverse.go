@@ -2,7 +2,7 @@ package main
 
 func Reverse(nm string) string {
 	// Feels over-engineered tbh...
-	// 2 slices, one to append string chars
+	// 2 slices, one to append elements
 	// a final one for the reversed string.
 	var uno []string
 	var bruno []string
@@ -17,10 +17,20 @@ func Reverse(nm string) string {
 		end--
 	}
 	// This final step loops through reversed string
-	// and concatenates each char into a string val.
+	// and concatenates each element into a string val.
 	var val string
 	for i := 0; i < len(bruno); i++ {
 		val += string(bruno[i])
 	}
 	return val
+}
+
+// Rudia demonstrates a much simpler way of reversing strings.
+func Rudia(nm string) string {
+	var str string
+	for i := len(nm) - 1; i >= 0; i-- {
+		str += string(nm[i])
+	}
+	// fmt.Println(str)
+	return str
 }
