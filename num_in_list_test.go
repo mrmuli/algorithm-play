@@ -12,6 +12,7 @@ func TestNumInList(t *testing.T) {
 		want bool
 	}{
 		{[]int{1, 2, 3, 4, 5}, 1, true},
+		{[]int{}, 1, false},
 		{[]int{1, 2, 3, 4, 5}, 2, true},
 		{[]int{1, 2, 3, 4, 5}, 3, true},
 		{[]int{1, 2, 3, 4, 5}, 4, true},
