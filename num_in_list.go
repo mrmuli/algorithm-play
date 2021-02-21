@@ -8,8 +8,7 @@ func NumInList(list []int, num int) bool {
 	}
 	// initially had this loop without the index
 	// placeholder and realised I was looping over
-	// indexes instead of values. Uncomment the Print
-	// statement to test.
+	// indexes instead of values.
 	for _, i := range list {
 		if i == num {
 			return true
