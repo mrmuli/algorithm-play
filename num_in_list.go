@@ -1,7 +1,7 @@
 package main
 
 // NumInList returns true if num is in the
-// list slice, and false otherwise.
+// slice, and false otherwise.
 func NumInList(list []int, num int) bool {
 	if len(list) <= 0 {
 		return false

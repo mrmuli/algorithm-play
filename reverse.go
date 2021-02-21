@@ -31,6 +31,5 @@ func Rudia(nm string) string {
 	for i := len(nm) - 1; i >= 0; i-- {
 		str += string(nm[i])
 	}
-	// fmt.Println(str)
 	return str
 }

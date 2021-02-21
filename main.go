@@ -9,4 +9,5 @@ func main() {
 	// NumInList(sample, 23)
 	// Reverse("baba")
 	// Rudia("baba")
+	FizzBuzz(10)
 }
